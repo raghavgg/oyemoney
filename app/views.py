@@ -12,6 +12,7 @@ import os
 
 def index(request):
     if request.user.is_authenticated:
+        context = {"company_data": {}}
         if request.POST:
             data_date = request.POST['bhav_copy_date']
             closing_price = int(request.POST['closing_price'])
@@ -23,12 +24,18 @@ def index(request):
             df['sum_vd'] = df[['vd_latest_yesterday', 'vd_latest_5d', 'vd_latest_2w', 'vd_latest_1m', 'vd_latest_3m']].sum(axis=1)
             df['sum_td'] = df[['td_latest_yesterday', 'td_latest_5d', 'td_latest_2w', 'td_latest_1m', 'td_latest_3m']].sum(axis=1)
             df = df.loc[(df['sum_cp'] >= closing_price) & (df['sum_vd'] >= volume) & (df['sum_td'] >= trades)]
-            #for isin_code in list(df['isin_code']):
-            #    bhav_data = BhavCopy.objects.filter(isin_code=isin_code, copy_date=data_date)
-            #    week_data = Weekhigh.objects.filter(security_code=bhav_data[0].security_code)
-            #    security_master_data = SecurityMaster.objects.filter(isin=isin_code)
-            #    print(security_master_data[0].company_name)
-        return render(request, "index.html")
+            try:
+                security_master_data_list = []
+                for isin_code in list(df['isin_code']):
+                    bhav_data = BhavCopy.objects.filter(isin_code=isin_code, copy_date=data_date)
+                    week_data = Weekhigh.objects.filter(security_code=bhav_data[0].security_code)
+                    security_master_data = SecurityMaster.objects.filter(isin=isin_code)
+                    tmp_list = {"company_name":security_master_data[0].company_name, "isin_code":security_master_data[0].isin, "prevclose": bhav_data[0].prevclose, "close": bhav_data[0].close, "date": bhav_data[0].copy_date}
+                    security_master_data_list.append(tmp_list)
+            except:
+                pass
+            context = {"company_data": security_master_data_list}
+        return render(request, "index.html", context)
 
     else:
         return render(request, "signin.html")
@@ -45,7 +52,6 @@ def update_master(request):
             df = pd.read_excel(io=excel_file.name, sheet_name='Data')
             SecurityMaster.objects.all().delete()
             sm_list = df.values.tolist()
-            sm_list = sm_list[0:100]
             for tmp_list in sm_list:
                 sm = SecurityMaster(master_date=master_date, company_name=tmp_list[1], isin=tmp_list[2], code1=tmp_list[3], code1_dummy=tmp_list[4], nse_code=tmp_list[5], nse_dummy=tmp_list[6], dummy1=tmp_list[7], dummy2=tmp_list[8], market_cap=tmp_list[9], category=tmp_list[10], sector=tmp_list[11], industry=tmp_list[12], country=tmp_list[13], currency='INR')
                 sm.save()
@@ -69,7 +75,6 @@ def update_52whigh(request):
             uploaded_file_url = fs.url(filename)
             df = pd.read_csv(excel_file.name)
             sm_list = df.values.tolist()
-            sm_list = sm_list[0:100]
             Weekhigh.objects.all().delete()
             for tmp_list in sm_list:
                 sm = Weekhigh(high_date=date_52whigh, security_code=tmp_list[0], security_name=tmp_list[1], ltp=tmp_list[2], week_high=tmp_list[3], prev_week_high=tmp_list[4], prev_week_high_date=tmp_list[5], all_time_high=tmp_list[6], all_time_high_date=tmp_list[7], group=tmp_list[8])
@@ -94,7 +99,6 @@ def update_bhav_copy(request):
             uploaded_file_url = fs.url(filename)
             df = pd.read_csv(excel_file.name)
             sm_list = df.values.tolist()
-            sm_list = sm_list[0:100]
             for tmp_list in sm_list:
                 bhav_previous = BhavCopy.objects.filter(isin_code=tmp_list[14], copy_date__lt=copy_date).order_by('-copy_date')
                 df = read_frame(bhav_previous)
