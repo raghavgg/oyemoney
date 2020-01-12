@@ -1,0 +1,41 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+{% include 'navigation.html' %}
+
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{% static 'css' %}demobar_w3_16oct2019.css">
+
+    {% if status == 'success' %}
+        <h2>Bhav Copy Data successfully updated.</h2>
+    {% endif %}
+    <section class="signin-form">
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="logo text-center top-bottom-gap">
+                    <a class="brand-logo" href="#">Upload Bhav Copy</a>
+
+                <div class="form34">
+                    <form action="/update_bhav_copy/" name="LoginForm" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% if next %}
+                            <input type="hidden" name="next" value="{{ next }}" />
+                        {% endif %}
+                        <div class="">
+                            <p class="text-head">Upload File</p><br><br>
+                            Date: <input type="date" name="bhav_copy_date" placeholder="Date" required="">
+                            <br><br>
+                            <input type="file" name="bhav_copy_file" required="">
+                        </div>
+                        <button type="submit" class="signinbutton btn">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% include 'footer.html' %}

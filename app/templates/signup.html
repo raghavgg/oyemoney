@@ -1,0 +1,43 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{% static 'css' %}demobar_w3_16oct2019.css">
+
+    <section class="signin-form">
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="logo text-center top-bottom-gap">
+                    <a class="brand-logo" href="https://demo.w3layouts.com/demos_new/template_demo/17-09-2019/master-signin-form--demo_Free/795377666/web/index.html">Master sign in form</a>
+                </div>
+
+                <div class="form34">
+                    <h4 class="form-head">Register</h4>
+                    <form action="https://demo.w3layouts.com/demos_new/template_demo/17-09-2019/master-signin-form--demo_Free/795377666/web/index.html" method="GET">
+                        <div class="">
+                            <p class="text-head">Username</p>
+                            <input type="text" name="username" class="input" placeholder="" required="">
+                        </div>
+                        <div class="">
+                            <p class="text-head">Email</p>
+                            <input type="email" name="email" class="input" placeholder="" required="">
+                        </div>
+                        <div class="">
+                            <p class="text-head">Password</p>
+                            <input type="password" name="password" class="input" placeholder="" required="">
+                        </div>
+                        <button type="submit" class="signinbutton btn">Sign in</button>
+                        <p class="signup">Have an account?<a href="{% url 'signin' %}" class="signuplink">Sign in</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% include 'footer.html' %}

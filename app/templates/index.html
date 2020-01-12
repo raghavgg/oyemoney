@@ -1,0 +1,13 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+{% if not request.user.is_authenticated %}
+    {% include 'signin.html' %}
+{% else %}
+    {% include 'authenticated_index.html' %}
+{% endif %}
+
+{% include 'footer.html' %}

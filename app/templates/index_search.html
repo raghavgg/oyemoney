@@ -1,0 +1,28 @@
+<section class="signin-form">
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="logo text-center top-bottom-gap">
+                    <a class="brand-logo" href="#">Explore Data</a>
+
+                <div class="form34">
+                    <form action="/" name="LoginForm" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% if next %}
+                            <input type="hidden" name="next" value="{{ next }}" />
+                        {% endif %}
+                        <div class="">
+                            Date: <input type="date" name="bhav_copy_date" placeholder="Date" required="">
+                            <br><br>
+                            Closing Price (Yes Count): <br><input type="text" name="closing_price" placeholder="Yes Count" required="">
+                            <br><br>
+                            Volume (Yes Count):<br> <input type="text" name="volume" placeholder="Yes Count" required="">
+                            <br><br>
+                            Trades Of The Day (Yes Count): <br><input type="text" name="trades" placeholder="Yes Count" required="">
+                            <br><br>
+                        </div>
+                        <button type="submit" class="signinbutton btn">Explore</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>

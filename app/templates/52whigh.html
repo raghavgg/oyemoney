@@ -1,0 +1,43 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+{% include 'navigation.html' %}
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{% static 'css' %}demobar_w3_16oct2019.css">
+
+{% if wh %}
+        <table border="1">
+            <tr>
+                <td>Date</td>
+                <td>Security Code</td>
+                <td>Security Name</td>
+                <td>LTP</td>
+                <td>Week High</td>
+                <td>Previous Week High</td>
+                <td>Previous Week High Date</td>
+                <td>All Time High</td>
+                <td>All Time High Date</td>
+                <td>Group</td>
+            </tr>
+    {% for tmp_sm in wh %}
+            <tr>
+                <td>{{ tmp_sm.high_date }}</td>
+                <td>{{ tmp_sm.security_code }}</td>
+                <td>{{ tmp_sm.security_name }}</td>
+                <td>{{ tmp_sm.ltp }}</td>
+                <td>{{ tmp_sm.week_high }}</td>
+                <td>{{ tmp_sm.prev_week_high }}</td>
+                <td>{{ tmp_sm.prev_week_high_date }}</td>
+                <td>{{ tmp_sm.all_time_high }}</td>
+                <td>{{ tmp_sm.all_time_high_date }}</td>
+                <td>{{ tmp_sm.group }}</td>
+            </tr>
+    {% endfor %}
+        </table>
+{% endif %}
+
+{% include 'footer.html' %}

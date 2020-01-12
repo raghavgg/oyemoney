@@ -1,0 +1,51 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+{% include 'navigation.html' %}
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{% static 'css' %}demobar_w3_16oct2019.css">
+
+{% if sm %}
+        <table border="1">
+            <tr>
+                <td>Company Name</td>
+                <td>ISIN</td>
+                <td>Code</td>
+                <td>Dummy</td>
+                <td>NSE Code</td>
+                <td>Dummy</td>
+                <td>Dummy</td>
+                <td>Dummy</td>
+                <td>Market Cap</td>
+                <td>Category</td>
+                <td>Sector</td>
+                <td>Industry</td>
+                <td>Country</td>
+                <td>Currency</td>
+            </tr>
+    {% for tmp_sm in sm %}
+            <tr>
+                <td>{{ tmp_sm.company_name }}</td>
+                <td>{{ tmp_sm.isin }}</td>
+                <td>{{ tmp_sm.code1 }}</td>
+                <td>{{ tmp_sm.code1_dummy }}</td>
+                <td>{{ tmp_sm.nse_code }}</td>
+                <td>{{ tmp_sm.nse_dummpy }}</td>
+                <td>{{ tmp_sm.dummpy }}</td>
+                <td>{{ tmp_sm.dummy2 }}</td>
+                <td>{{ tmp_sm.market_cap }}</td>
+                <td>{{ tmp_sm.category }}</td>
+                <td>{{ tmp_sm.sector }}</td>
+                <td>{{ tmp_sm.industry }}</td>
+                <td>{{ tmp_sm.country }}</td>
+                <td>{{ tmp_sm.currency }}</td>
+            </tr>
+    {% endfor %}
+        </table>
+{% endif %}
+
+{% include 'footer.html' %}

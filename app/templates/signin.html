@@ -1,0 +1,54 @@
+{% load static %}
+{% include 'header.html' %}
+
+<script src="{% static 'js' %}jquery.min.js"></script>
+<script src="{% static 'js' %}monetization.js" type="text/javascript"></script>
+
+
+
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{% static 'css' %}demobar_w3_16oct2019.css">
+
+    <section class="signin-form">
+        <div class="overlay">
+            <div class="wrapper">
+                <div class="logo text-center top-bottom-gap">
+                    <a class="brand-logo" href="https://demo.w3layouts.com/demos_new/template_demo/17-09-2019/master-signin-form--demo_Free/795377666/web/index.html">Master sign in form</a>
+                    <!-- if logo is image enable this
+			<a class="brand-logo" href="#index.html">
+			    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+			</a> -->
+                </div>
+                <!---728x90--->
+
+                <div class="form34">
+                    <h4 class="form-head">Sign in now</h4>
+                    <form action="/signin/" name="LoginForm" method="POST">
+                        {% csrf_token %}
+                        {% if next %}
+                            <input type="hidden" name="next" value="{{ next }}" />
+                        {% endif %}
+                        <div class="">
+                            <p class="text-head">Username</p>
+                            <input type="text" name="username" class="input" placeholder="" required="">
+                        </div>
+                        <div class="">
+                            <p class="text-head">Password</p>
+                            <input type="password" name="password" class="input" placeholder="" required="">
+                        </div>
+                        <button type="submit" class="signinbutton btn">Sign in</button>
+                        <p class="signup">Have not an account yet?<a href="{% url 'signup' %}" class="signuplink">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+{% include 'footer.html' %}

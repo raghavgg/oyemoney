@@ -1,0 +1,11 @@
+<div class="topnav">
+    <a href="{% url 'index' %}">Home</a>
+    {% if request.user.is_superuser %}
+    <a href="{% url 'update_master' %}">Update Master File</a>
+    <a href="{% url 'master_data' %}">Master File Data</a>
+    <a href="{% url 'update_52whigh' %}">Update 52whigh</a>
+    <a href="{% url 'week_high_data' %}">52whigh File Data</a>
+    <a href="{% url 'update_bhav_copy' %}">Upload Bhav Copy</a>
+    {% endif %}
+    <a href="{% url 'logout' %}">Logout</a>
+</div>
