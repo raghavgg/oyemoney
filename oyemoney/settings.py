@@ -25,7 +25,7 @@ SECRET_KEY = 'f-d1)pm-jjvx0pjf39=fq+f9_)*%iq%ki2f3^+q%^qf9%%x=5+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['18.222.212.176']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'oyemoney.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'oyemoney_db',
+        'USER': 'admin',
+        'PASSWORD': 'oyemoney098',
+        'HOST': '172.31.5.165',
+        'PORT': '3306',
     }
 }
 

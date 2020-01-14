@@ -1,0 +1,199 @@
+Watching for file changes with StatReloader
+[09/Jan/2020 17:02:53] "GET / HTTP/1.0" 200 2502
+[09/Jan/2020 17:02:55] "GET /static/css/style.css HTTP/1.0" 200 7576
+[09/Jan/2020 17:02:55] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:02:55] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:02:55] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:02:55] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:02:56] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[09/Jan/2020 17:03:25] "GET / HTTP/1.0" 200 2502
+[09/Jan/2020 17:03:25] "GET /static/css/style.css HTTP/1.0" 200 7576
+[09/Jan/2020 17:03:25] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:03:26] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:03:26] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:29] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:31] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[09/Jan/2020 17:03:42] "GET / HTTP/1.0" 200 2502
+[09/Jan/2020 17:03:42] "GET /static/css/style.css HTTP/1.0" 200 7576
+[09/Jan/2020 17:03:42] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:03:42] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:42] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:03:43] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:44] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[09/Jan/2020 17:03:47] "GET /update_bhav_copy/ HTTP/1.0" 200 2286
+[09/Jan/2020 17:03:48] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:03:48] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:48] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:03:48] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[09/Jan/2020 17:03:48] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:48] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[09/Jan/2020 17:03:50] "GET / HTTP/1.0" 200 2502
+[09/Jan/2020 17:03:51] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:03:51] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:03:51] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:03:51] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:04:06] "POST / HTTP/1.0" 200 13867
+[09/Jan/2020 17:04:06] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[09/Jan/2020 17:04:06] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[09/Jan/2020 17:04:06] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[09/Jan/2020 17:50:11] "GET / HTTP/1.0" 200 2577
+[09/Jan/2020 19:15:37] "GET / HTTP/1.0" 200 2577
+[09/Jan/2020 21:02:55] "GET / HTTP/1.0" 200 2577
+Not Found: /phpmyadmin/
+[09/Jan/2020 21:44:49] "GET /phpmyadmin/ HTTP/1.0" 404 3561
+[09/Jan/2020 21:52:24] "GET / HTTP/1.0" 200 2577
+[09/Jan/2020 22:08:44] "GET / HTTP/1.0" 200 2577
+Not Found: /shell
+[09/Jan/2020 22:10:40] "GET /shell HTTP/1.0" 404 3543
+[09/Jan/2020 22:25:27] "GET / HTTP/1.0" 200 2577
+[09/Jan/2020 23:35:25] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 00:21:06] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 00:40:17] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 04:00:31] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 04:33:49] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 04:40:46] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 04:48:53] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 05:43:36] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 10:11:45] "GET / HTTP/1.0" 200 2577
+Not Found: /robots.txt
+[10/Jan/2020 10:11:45] "GET /robots.txt HTTP/1.0" 404 3558
+Not Found: /favicon.ico
+[10/Jan/2020 10:11:45] "GET /favicon.ico HTTP/1.0" 404 3561
+[10/Jan/2020 10:58:06] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 11:14:40] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 11:29:11] "GET / HTTP/1.0" 200 2577
+Not Found: /solr/admin/info/system
+[10/Jan/2020 13:30:26] "GET /solr/admin/info/system HTTP/1.0" 404 3594
+[10/Jan/2020 13:35:00] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 13:35:01] "GET / HTTP/1.0" 200 2577
+Not Found: /index.php
+[10/Jan/2020 13:41:09] "GET /index.php HTTP/1.0" 404 3555
+[10/Jan/2020 14:51:01] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 14:51:38] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 14:55:56] "GET / HTTP/1.0" 200 2577
+Not Found: /pandora_console/index.php
+[10/Jan/2020 15:45:18] "POST /pandora_console/index.php HTTP/1.0" 404 3604
+[10/Jan/2020 18:39:39] "GET / HTTP/1.0" 200 2577
+[10/Jan/2020 19:23:38] "GET / HTTP/1.0" 200 2577
+Not Found: /robots.txt
+[11/Jan/2020 00:05:30] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 00:05:30] "GET /robots.txt HTTP/1.0" 404 3558
+[11/Jan/2020 00:05:30] "GET /static/css/style.css HTTP/1.0" 200 7576
+[11/Jan/2020 00:05:30] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:05:30] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:05:30] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:05:30] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:05:31] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:05:31] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+Not Found: /favicon.ico
+[11/Jan/2020 00:05:31] "GET /favicon.ico HTTP/1.0" 404 3561
+[11/Jan/2020 00:05:39] "POST /signin/ HTTP/1.0" 302 0
+[11/Jan/2020 00:05:39] "GET / HTTP/1.0" 200 2502
+[11/Jan/2020 00:05:39] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:05:39] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:05:39] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:05:39] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:05:40] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[11/Jan/2020 00:06:27] "GET /master_data/ HTTP/1.0" 200 2421154
+[11/Jan/2020 00:06:28] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:06:28] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:06:28] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:06:28] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:06:49] "GET / HTTP/1.0" 200 2502
+[11/Jan/2020 00:06:56] "GET /update_52whigh/ HTTP/1.0" 200 2284
+[11/Jan/2020 00:06:56] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:06:56] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:06:56] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:06:56] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:06:57] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[11/Jan/2020 00:08:25] "GET / HTTP/1.0" 200 2577
+Not Found: /favicon.ico
+[11/Jan/2020 00:08:25] "GET /favicon.ico HTTP/1.0" 404 3561
+[11/Jan/2020 00:09:40] "GET / HTTP/1.0" 200 2502
+[11/Jan/2020 00:09:41] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:09:41] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:09:41] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:09:41] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/public_html/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/public_html/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/public_html/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/public_html/oyemoney/app/views.py", line 18, in index
+    closing_price = int(request.POST['closing_price'])
+ValueError: invalid literal for int() with base 10: 'Yes Count'
+[11/Jan/2020 00:10:09] "POST / HTTP/1.0" 500 65320
+[11/Jan/2020 00:11:49] "GET /update_bhav_copy/ HTTP/1.0" 200 2286
+[11/Jan/2020 00:11:50] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:11:50] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:11:50] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:11:50] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:11:50] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[11/Jan/2020 00:16:46] "POST /update_bhav_copy/ HTTP/1.0" 200 2345
+[11/Jan/2020 00:16:47] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:16:47] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:16:47] "GET /static/cssdemobar_w3_16oct2019.css HTTP/1.0" 404 1705
+[11/Jan/2020 00:16:47] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:16:47] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[11/Jan/2020 00:21:27] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 00:27:10] "GET / HTTP/1.0" 200 2502
+[11/Jan/2020 00:27:10] "GET /static/cssfont-awesome.css HTTP/1.0" 404 1681
+[11/Jan/2020 00:27:10] "GET /static/jsjquery.min.js HTTP/1.0" 404 1669
+[11/Jan/2020 00:27:10] "GET /static/jsmonetization.js HTTP/1.0" 404 1675
+[11/Jan/2020 00:27:11] "GET /static/images/bg.jpg HTTP/1.0" 404 1663
+[11/Jan/2020 02:45:04] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 02:55:21] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 05:30:13] "GET / HTTP/1.0" 200 2577
+Not Found: /clientarea.php
+[11/Jan/2020 06:25:18] "GET /clientarea.php HTTP/1.0" 404 3570
+[11/Jan/2020 07:01:33] "GET / HTTP/1.0" 200 2577
+Not Found: /robots.txt
+[11/Jan/2020 07:01:33] "GET /robots.txt HTTP/1.0" 404 3558
+Not Found: /sitemap.xml
+[11/Jan/2020 07:01:33] "GET /sitemap.xml HTTP/1.0" 404 3561
+Not Found: /.well-known/security.txt
+[11/Jan/2020 07:01:34] "GET /.well-known/security.txt HTTP/1.0" 404 3600
+Not Found: /favicon.ico
+[11/Jan/2020 07:01:34] "GET /favicon.ico HTTP/1.0" 404 3561
+[11/Jan/2020 07:11:21] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 07:14:36] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 07:37:34] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 09:43:41] "GET / HTTP/1.0" 200 2577
+Not Found: /TP/public/index.php
+[11/Jan/2020 10:41:49] "GET /TP/public/index.php HTTP/1.0" 404 3585
+Not Found: /TP/index.php
+[11/Jan/2020 10:41:49] "GET /TP/index.php HTTP/1.0" 404 3564
+Not Found: /thinkphp/html/public/index.php
+[11/Jan/2020 10:41:50] "GET /thinkphp/html/public/index.php HTTP/1.0" 404 3618
+Not Found: /html/public/index.php
+[11/Jan/2020 10:41:51] "GET /html/public/index.php HTTP/1.0" 404 3591
+Not Found: /public/index.php
+[11/Jan/2020 10:41:51] "GET /public/index.php HTTP/1.0" 404 3576
+Not Found: /TP/html/public/index.php
+[11/Jan/2020 10:41:52] "GET /TP/html/public/index.php HTTP/1.0" 404 3600
+Not Found: /elrekt.php
+[11/Jan/2020 10:41:52] "GET /elrekt.php HTTP/1.0" 404 3558
+Not Found: /index.php
+[11/Jan/2020 10:41:52] "GET /index.php HTTP/1.0" 404 3555
+[11/Jan/2020 10:41:53] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 12:51:50] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 13:20:48] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 13:41:07] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 14:15:35] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 14:44:38] "GET / HTTP/1.0" 200 2577
+Not Found: /TP/public/index.php
+[11/Jan/2020 16:22:21] "GET /TP/public/index.php HTTP/1.0" 404 3585
+[11/Jan/2020 17:05:19] "GET / HTTP/1.0" 200 2577
+Not Found: /robots.txt
+[11/Jan/2020 17:05:20] "GET /robots.txt HTTP/1.0" 404 3558
+Not Found: /favicon.ico
+[11/Jan/2020 17:05:20] "GET /favicon.ico HTTP/1.0" 404 3561
+[11/Jan/2020 18:35:42] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 19:46:00] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 22:22:22] "GET / HTTP/1.0" 200 2577
+[11/Jan/2020 23:22:30] "GET / HTTP/1.0" 200 2577
+[12/Jan/2020 03:57:20] "GET / HTTP/1.0" 200 2577
+[12/Jan/2020 04:24:06] "GET / HTTP/1.0" 200 2577

@@ -1,3 +1,4 @@
+
 <section class="signin-form">
         <div class="overlay">
             <div class="wrapper">
@@ -26,3 +27,25 @@
             </div>
         </div>
 </section>
+
+{% if company_data %}
+	<table id="customers">
+	  <tr>
+	    <th>Company</th>
+	    <th>Date</th>
+	    <th>ISIN Code</th>
+	    <th>PrevClose</th>
+	    <th>Close</th>
+	  </tr>
+
+	  {% for cd in company_data %}
+          <tr>
+	  	<td>{{ cd.company_name }}</td>
+	  	<td>{{ cd.date }}</td>
+            <td>{{ cd.isin_code }}</td>
+            <td>{{ cd.prevclose }}</td>
+            <td>{{ cd.close }}</td>
+          </tr>
+	  {% endfor %}
+	</table>
+{% endif %}
